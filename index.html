@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="Vithalreddy.M.B - Mean Stack Developer">
     <meta name="author" content="Vithalreddy.M.B">
     <link rel="shortcut icon" type="image/png" href="https://vmrworld.com/favicon.ico" />
@@ -28,45 +28,52 @@
 <body>
 
     <!-- Navigation -->
-    <div class="myNav" id="page-top">
-        <div id="logo">Vithalreddy.M.B</div>
-
-        <label for="drop" class="toggle" style="margin-left: 5px;"><i class="fa fa-bars" aria-hidden="true">  Menu </i></label>
-        <input type="checkbox" id="drop" />
-        <ul class="menu">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#portfolio">PortFolio</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-            <li><a href="https://vmrworld.com" target="_blank">My Blog</a></li>
-        </ul>
-    </div>
-    <!-- Navigation end -->
-    <section class="myBody">
-        <!-- hero image name and social icons -->
-        <div class="hero-image">
-            <div class="hero-text">
-                <img src="img/me.png" alt="my image" class="round-img img-responsive" />
-                <br>
-                <h1 style="font-size:50px">Hi, <span style="color:red">I'm</span> VithalReddy.M.B</h1>
-                <p>I'M A MEAN STACK WEB DEVELOPER BASED IN BENGALURU.</p>
-                <br>
-                <ul class="list-inline banner-social-buttons myLinks">
-                    <li><a href="http://github.com/vithalreddy" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="http://twitter.com/vithalreddy" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://instagram.com/vithalreddy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="http://pinterest.com/vithalreddy" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/vithalreddy" target="_blank"><i class="fa fa-linkedin"></i></li>
-        <li><a href="https://www.facebook.com/vithalreddy.mb" target="_blank"><i class="fa fa-facebook"></i></li>
-          <li><a href="mailto:contact@vmrworld.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+    <div id="pagetop" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="#" title="VithalReddy.M.B - The Tech Guy">VithalReddy</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about-me">About Me</a>
+                    </li>
+                    <li><a href="#skills">My Skills</a>
+                    </li>
+                    <li><a href="#portfolio">PortFolio</a>
+                    </li>
+                    <li><a href="#contact">Contact Me</a>
+                    </li>
+                    <li><a href="https://vmrworld.com" target="_blank">My Blog</a>
+                    </li>
                 </ul>
-                <br>
-                <div class="row myLinks">
-                    <a href="#about-me"><i class="fa fa-arrow-down"></i></a>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Navigation end -->
+    <!-- hero image name and social icons -->
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="img/me.jpg" alt="my image" class="round-img img-responsive" />
+            <br>
+            <h1>Hi, <span style="color:red">I'm</span> VithalReddy.M.B</h1>
+            <p>I'M A MEAN STACK WEB DEVELOPER BASED IN BENGALURU.</p>
+            <br>
+            <ul class="list-inline banner-social-buttons myLinks">
+                <li><a href="http://github.com/vithalreddy" target="_blank"><i class="fa fa-github" style="color:white"></i></a></li>
+                <li><a href="http://twitter.com/vithalreddy" target="_blank"><i class="fa fa-twitter" style="color:white"></i></a></li>
+                <li><a href="http://instagram.com/vithalreddy" target="_blank"><i class="fa fa-instagram" style="color:white"></i></a></li>
+                <li><a href="http://pinterest.com/vithalreddy" target="_blank"><i class="fa fa-pinterest-p" style="color:white"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/vithalreddy" target="_blank"><i class="fa fa-linkedin" style="color:white"></i></li>
+        <li><a href="https://www.facebook.com/vithalreddy.mb" target="_blank"><i class="fa fa-facebook" style="color:white"></i></li>
+          <li><a href="mailto:vmreddyvmb@gmail.com" target="_blank"><i class="fa fa-envelope" style="color:white"></i></a></li>
+            </ul>
+            <br>
+
+        </div>
+    </div>
+
     <!-- hero image name and social icons end -->
     <div class="container-fluid">
         <div class="row" id="about-me">
@@ -77,6 +84,7 @@
                 <img src="img/img-2.jpg" alt="bg images" class="img-responsive center-block">
             </div>
             <div class=" col-xs-12	col-sm-12 col-md-8 col-lg-8">
+                <br>
                 <p class="vh-center">Hey there! I'm Vithalreddy, I started coding as a curious Tech guy taking an intro to HTML class, which is probably why I'm primarily interested in web development and design. When i'm not coding, I love watching Game of Thrones and Billions
                     tv series.
                     <br>
@@ -96,7 +104,7 @@
             </div>
             <br>
             <div class="col-xs-12	col-sm-12 col-md-12 col-lg-12">
-                <p class="vh-center">"A resourceful, self-motivated and self-learned Mean Stack Web Developer"</p>
+                <p class="vh-center">"A resourceful, self-motivated and Curious Mean Stack Web Developer"</p>
             </div>
             <div class="col-lg-6">
                 <h4><i class="fa fa-wrench indigo-text" aria-hidden="true"></i>  Developement</h4>
@@ -107,7 +115,7 @@
                     <li class="list-group-item">Javascript <span class="badge">Beginner</span></li>
                     <li class="list-group-item">Bootstrap <span class="badge">Beginner</span></li>
 
-                    <li class="list-group-item">Responsive Web Design <span class="badge">Intermediate</span></li>
+                    <li class="list-group-item">Responsive Web Design <span class="badge">Beginner</span></li>
                     <li class="list-group-item">PHP <span class="badge">Beginner</span></li>
 
                 </ul>
@@ -130,7 +138,7 @@
         </div>
     </div>
     <!-- container-fluid skills end -->
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: white;">
         <!-- container-fluid work -->
         <div class="row" id="portfolio">
             <div class="col-xs-12	col-sm-12 col-md-12 col-lg-12 h3center">
@@ -168,7 +176,7 @@
                 <p class="vh-center">If you like my work ,I am available for Freelancing or Full TIme Web Development Job.Check out contact me section.</p>
             </div>
             <div class="col-lg-12 col-md-12 text-center git">
-                <h4 style="font-size:4vmin">Check out My All Work On Github</h4>
+                <h4 style="font-size:120%">Check out My All Work On Github</h4>
                 <a href="https://github.com/vithalreddy" target="_blank"><i class="fa fa-github fa-3x" style="color:white"  aria-hidden="true"></i></a>
             </div>
             <!-- / portfolio .row end -->
@@ -210,10 +218,10 @@
         <div class="row" id="quote" style="background-color:#9b59b6">
             <br>
             <div class="col-xs-12	col-sm-12 col-md-12 col-lg-12">
-                <p class="vh-center" style="font-family:cursive; font-size:4vmin; color:white;">" Design is not just what it looks like and feels like. Design is how it works." <br>~Steve Jobs </p>
+                <p class="vh-center" style="font-family:Lato, monospace; font-size:120%; color:white;">" Design is not just what it looks like and feels like. Design is how it works." <br>~Steve Jobs </p>
                 <br>
                 <br>
-                <a href="#page-top" class="btn btn-danger btn-large center-block" style="width:130px;"><i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i> Go to Top</a>
+                <a href="#pagetop" class="btn btn-danger btn-large center-block" style="width:130px;"><i class="fa fa-angle-double-up fa-fw" aria-hidden="true"></i> Go to Top</a>
 
                 <hr>
                 <div class="col-xs-12	col-sm-12 col-md-12 col-lg-12 myFooter">

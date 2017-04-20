@@ -1,288 +1,232 @@
-html {
-    border-top: 5px solid black;
-}
-
 body {
-    margin: 0px;
+    margin: none;
+    padding: none;
+    font-family: Lato, monospace, sans-serif;
+    border-top: 5px solid black;
+    font-size: 16px;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
-h1{
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 2em;
-}
-p{
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-/* nav menu start*/
-
-.toggle, [id^=drop] {
-    display: none;
-}
-
-
-/* Giving a background-color to the .myNav container. */
-
-.myNav {  
-    margin: 0;
-    padding: 0;
-    background-color: #E64A19;
-}
-
-#logo {
-    display: block;
-    padding: 0 30px;
-    float: left;
+@import url(http://fonts.googleapis.com/css?family=Lato);
+h1 {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 60px;
+    font-size: 200%;
+}
+
+p {
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+/* nav menu*/
+
+#pagetop.navbar-default .navbar-brand {
     color: #ffffff;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Lato, cursive, monospace, sans-serif;
+    font-size: 150%;
 }
 
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
-.myNav:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
-
-.myNav ul {
-    float: right;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-
-
-/* Positioning the .myNavigation items inline */
-
-.myNav ul li {
-    margin: 0px;
-    display: inline-block;
-    float: left;
-    background-color: #E64A19;
-}
-
-
-/* Styling the links */
-
-.myNav a {
-    display: block;
-    padding: 14px 20px;
-    color: #FFF;
-    font-size: 17px;
+#pagetop.navbar-default {
+    font-size: 100%;
+    background-color: #ff0000;
+    border-bottom: 5px solid #000000;
     font-weight: bold;
-    text-decoration: none;
-    line-height: 35px;
+    font-family: Lato, monospace, sans-serif;
+    padding: 10px;
 }
 
-.myNav ul li ul li:hover {
-    background: #000000;
+#pagetop.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    background-color: #ff0000;
+    font-weight: bold;
 }
 
-
-/* Background color change on Hover */
-
-.myNav a:hover {
+#pagetop.navbar-default .navbar-nav>li>a:hover, #pagetop.navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
     background-color: #000000;
 }
 
-
-/* Media queries */
-
-@media all and (max-width: 768px) {
-    #logo {
-        display: block;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
-    nav {
-        margin: 0;
-    }
-    /* Hide the navigation menu by default */
-    /* Also hide the  */
-    .toggle+a, .menu {
-        display: none;
-    }
-    /* Stylinf the toggle lable */
-    .toggle {
-        display: block;
-        background-color: #E64A19;
-        padding: 14px 20px;
-        color: #FFF;
-        font-size: 17px;
-        text-decoration: none;
-        border: none;
-    }
-    .toggle:hover {
-        background-color: #000000;
-    }
-    /* Display Dropdown when clicked on Parent Lable */
-    [id^=drop]:checked+ul {
-        display: block;
-    }
-    /* Change menu item's width to 100% */
-    .myNavul li {
-        display: block;
-        width: 100%;
-    }
-    .myNavul ul .toggle, .myNavul ul a {
-        padding: 0 40px;
-    }
-    .myNavul ul ul a {
-        padding: 0 80px;
-    }
-    .myNava:hover, .myNavul ul ul a {
-        background-color: #000000;
-    }
-    .myNavul li ul li .toggle, .myNavul ul a, .myNavul ul ul a {
-        padding: 14px 20px;
-        color: #FFF;
-        font-size: 17px;
-    }
-    .myNavul li ul li .toggle, .myNavul ul a {
-        background-color: #E64A19;
-    }
-    /* Hide Dropdowns by Default */
-    .myNavul ul {
-        float: none;
-        position: static;
-        color: #ffffff;
-        /* has to be the same number as the "line-height" of ".myNava" */
-    }
-    /* Hide menus on hover */
-    .myNavul ul li:hover>ul, .myNavul li:hover>ul {
-        display: none;
-    }
-    .myNavul ul ul li {
-        position: static;
-        /* has to be the same number as the "width" of ".myNavul ul li" */
-    }
+#pagetop.navbar-default .navbar-nav>.active>a, #pagetop.navbar-default .navbar-nav>.active>a:hover, #pagetop.navbar-default .navbar-nav>.active>a:focus {
+    color: #ffffff;
+    background-color: #000000;
 }
 
-@media all and (max-width: 330px) {
-    .myNavul li {
-        display: block;
-        width: 94%;
-    }
+#pagetop.navbar-default .navbar-toggle {
+    border-color: #000000;
 }
+
+#pagetop.navbar-default .navbar-toggle:hover, #pagetop.navbar-default .navbar-toggle:focus {
+    background-color: #000000;
+}
+
+#pagetop.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+}
+
+#pagetop.navbar-default .navbar-toggle:hover .icon-bar, #pagetop.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ff0000;
+}
+
+
 /* nav menu end*/
+
+
 /* Hero image*/
+
 .hero-image {
-  background-image: url("bg.jpg");
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: url("bg.jpg");
+    min-height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-top: 30px;
 }
+
 .round-img {
-  display: block;
-  margin: 0 auto;
-  width: 256px;
-  height: 256px;
-  border-radius: 128px;
-  border: 2px solid grey;
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 128px;
+    border: 2px solid grey;
 }
 
 .myLinks {
-    font-size: 30px;
-    z-index: 2;
+    border: 2px solid white;
+    padding: 5px;
 }
 
 .myLinks li {
     padding: 0px 10px;
-    font-size: 30px;
-}
-#about-me {
-      text-align: center;
-      background-color: #E74C3C;
-      min-height: 400px;
-      font-family: monospace;
-      font-weight: bold;
-      color: #303030;
-      font-size: 2vmin;
-}
-.vh-center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.h3style{
-  display: inline-block;
-  padding: 14px 20px;
-  background-color: white;
-  color: #E74C3C;
-  border: 2px solid black;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 6vmin;
-  text-align: center;
-}
-.h3center{
-  text-align: center;
-  font-weight: bold;
-  font-family: monospace;
 }
 
-  #skills{
+.myLinks li a {
+    font-size: 200%;
+}
+
+#about-me {
+    text-align: center;
+    background-color: #E74C3C;
+    min-height: 400px;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 120%;
+}
+
+.vh-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h3style {
+    display: inline-block;
+    padding: 14px 20px;
     background-color: white;
-  }
-  h4{
-    font-size: 3vmin;
+    color: #E74C3C;
+    border: 2px solid black;
+    font-weight: bold;
+    font-family: Lato, monospace;
+    font-size: 200%;
+    text-align: center;
+}
+
+.h3center {
+    text-align: center;
+    font-weight: bold;
+    font-family: Lato, monospace;
+}
+
+#skills {
+    background-color: white;
+}
+
+h4 {
+    font-size: 200%;
     font-weight: bold;
     color: #E74C3C;
     text-align: center;
     padding: 0.5%;
-    font-family: monospace;
-  }
-  .list-group{
+    font-family: Lato, monospace;
+}
+
+.list-group {
     font-weight: bold;
-    font-family: monospace;
-    font-size: 3vmin;
-  }
+    font-family: Lato, monospace;
+    font-size: 150%;
+}
 
-  .portfolio-item{
+.badge {
+    font-size: 80%;
+}
+
+.portfolio-item {
     min-height: 500px;
+    color: black;
+}
 
-  }
-  .git{
+.git {
     min-height: 50px;
     background-color: #87DCED;
-  }
-  #contact{
+}
+
+#contact {
     background-color: #FA6D68;
-font-size: 2vmin;
-font-family: monospace;
-min-height: 350px;
-  }
-.f-center{
-text-align: center;
-color: black;
-font-family: serif;
+    font-size: 130%;
+    font-family: monospace;
+    min-height: 350px;
+}
+
+.f-center {
+    text-align: center;
+    color: black;
+    font-family: serif;
+}
+
+
+/* Extra small devices (phones, up to 480px) */
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+
+/* tablets/desktops and up ----------- */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/* large desktops and up ----------- */
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
 }
