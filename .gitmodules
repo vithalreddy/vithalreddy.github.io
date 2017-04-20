@@ -1,3 +1,6 @@
 [submodule "angularjs-epl-footaball-spa-app"]
 	path = angularjs-epl-footaball-spa-app
 	url = https://github.com/vithalreddy/angularjs-epl-footaball-spa-app
+[submodule "RWD-Design-Patterns"]
+	path = RWD-Design-Patterns
+	url = https://github.com/vithalreddy/RWD-Design-Patterns
