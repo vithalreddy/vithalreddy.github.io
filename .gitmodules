@@ -1,3 +1,6 @@
 [submodule "angularjs-epl-footaball-spa-app"]
 	path = angularjs-epl-footaball-spa-app
 	url = https://github.com/vithalreddy/angularjs-epl-footaball-spa-app
+[submodule "angularjs-game-of-thrones-anapioficeandfire-spa-app"]
+	path = angularjs-game-of-thrones-anapioficeandfire-spa-app
+	url = https://github.com/vithalreddy/angularjs-game-of-thrones-anapioficeandfire-spa-app
