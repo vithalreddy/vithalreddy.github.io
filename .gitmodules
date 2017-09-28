@@ -4,3 +4,6 @@
 [submodule "angularjs-game-of-thrones-anapioficeandfire-spa-app"]
 	path = angularjs-game-of-thrones-anapioficeandfire-spa-app
 	url = https://github.com/vithalreddy/angularjs-game-of-thrones-anapioficeandfire-spa-app
+[submodule "editable-html-table-js"]
+	path = editable-html-table-js
+	url = https://github.com/vithalreddy/editable-html-table-js
